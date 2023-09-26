@@ -11,6 +11,8 @@
     "start": "cd server && node server.js & cd client && npm start",
     "install": "cd server && npm i && cd ../client && npm i",
     "dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\""
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "build:client": "cd client && npm run build"
   },
   "author": "",
   "license": "ISC",
