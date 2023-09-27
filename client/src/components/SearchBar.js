@@ -48,7 +48,7 @@ function SearchBar() {
 
       {/* after searching is sccussful display result */}
       <div>
-        {results.map((item) => (
+        {results.slice(0, 5).map((item) => (
           <div className="music-card" key={item.id}>
             {/* images */}
             <img
